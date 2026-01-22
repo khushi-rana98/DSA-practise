@@ -59,6 +59,38 @@ int main(){
     }
 
     cout<<"Inverted right angled triangle"<<endl;
+    for(int row=1;row<=5;row++){
+        for(int col=1;col<= 5+1-row;col++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
 
+    // inverted right angled triangle variation
+    cout<<"Inverted right angled triangle variation: "<<endl;
+    for(int row=1;row<=5;row++){
+        for(int col=1;col<=5-(row-1);col++){
+            cout<<col<<" ";
+        }
+        cout<<endl;
+    }
+
+    cout<<endl<<"Inverted right angled triangle pattern: "<<endl;
+    for(int row=1;row<=5;row++){
+        for(int col=5-(row-1);col>=1;col--){
+            cout<<col<<" ";
+        }
+        cout<<endl;
+    }
+
+    cout<<endl<<"Right angled triangle variation"<<endl;
+    // for(int row=1;row<=5;row++){
+    //     int num=5;
+    //     for(int col=1;col<=row;col--){
+            
+    //         cout<< num--<<" ";
+    //     }
+    //     cout<<endl;
+    // }
     return 0;
 }
