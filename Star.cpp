@@ -90,5 +90,93 @@ int main(){
         }
         cout<<endl;
     }
+
+    cout<<endl<<"Right angled triangle variation"<<endl;
+    for(int row=1;row<=4;row++){
+        for(int col=1;col<=4-row;col++){
+            cout<<" ";
+        }
+        for(int col=1;col<=row;col++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+
+    for(int row=1;row<=5;row++){
+        for(int col=1;col<=5;col++){
+            if(col<=5-row)
+            cout<<" ";
+            else
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+
+    cout<<endl<<"Variation in inverted right angled triangle"<<endl;
+    for(int row=1;row<=5;row++){
+        for(int col=1;col<=5;col++){
+            if(col<=5-row)
+            cout<<" ";
+            else
+            cout<<row;
+        }
+        cout<<endl;
+    }
+
+    cout<<endl;
+    for(int row=1;row<=4;row++){
+        for(int col=1;col<=4-row;col++){
+            cout<<" ";
+        }
+        for(int col=1;col<=row;col++){
+            cout<<row;
+        }
+        cout<<endl;
+    }
+
+    cout<<"Variation "<<endl;
+    for(int row=1;row<=4;row++){
+        for(int col=1;col<=4-row;col++){
+            cout<<" ";
+        }
+        for(int col=1;col<=row;col++){
+            cout<<col;
+        }
+        cout<<endl;
+    }
+
+   cout<<"Characters in rows"<<endl;
+   for(int row=1;row<=5;row++){
+    for(int col=1;col<=5-row;col++){
+        cout<<" ";
+    }
+    for(char c='A';c<='A'+(row-1);c++){
+        cout<<c;
+    }
+    cout<<endl;
+   }
+
+   cout<<"Characters variation"<<endl;
+   for(int row=1;row<=5;row++){
+    for(int col=1;col<=5-row;col++){
+        cout<<" ";
+    }
+    for(int col=1;col<=row;col++){
+        char name ='a'+ (col-1);
+        cout<<name;
+    }
+    cout<<endl;
+   }
+
+   cout<<"Reverse"<<endl;
+   for(int row=1;row<=5;row++){
+    for(int col=1;col<=5-row;col++){
+        cout<<" ";
+    }
+    for(int col=row;col>=1;col--){
+        cout<<col;
+    }
+    cout<<endl;
+   }
     return 0;
 }
