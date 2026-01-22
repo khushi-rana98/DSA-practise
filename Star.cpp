@@ -40,5 +40,25 @@ int main(){
         }
         cout<<endl;
     }
+
+    cout<<"Right angled tringle variation: "<<endl;
+    for(int row=1;row<=5;row++){
+        for(int col=row;col>=1;col--){
+            cout<<col<<" ";
+        }
+        cout<<endl;
+    }
+
+    cout<<"Right angled traingle variation: "<<endl;
+    for(int row=1;row<=5;row++){
+        char c='a'+(row-1);
+        for(int col=1;col<=row;col++){
+         cout<<c<<" ";   
+        }
+        cout<<endl;
+    }
+
+    cout<<"Inverted right angled triangle"<<endl;
+
     return 0;
 }
